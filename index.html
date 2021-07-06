@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./app/css/styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./app/assets/favicon-32x32.png">
+  <meta
+  name="description"           
+  content="showcase website built from scratch in order to get better at web development and web design, using HTML, Sass and Javascript" />
+  
+  
+  <title>Photosnap | Home</title>
+</head>
+<body>
+    <header class="header wrapper wrapper--header">
+      <a href="index.html">
+        <img class="header__logo" src="./app/assets/shared/desktop/logo.svg" alt="photosnap logo" />
+      </a>
+      <ul id="menu" class="header__menu">
+        <li class="header__menu-link"><a href="./stories.html">STORIES</a></li>
+        <li class="header__menu-link"><a href="./features.html">FEATURES</a></li>
+        <li class="header__menu-link"><a href="./pricing.html">PRICING</a></li>
+      </ul>
+      <a class="header__cta btn btn--onlight" href="#">GET AN INVITE</a>
+      <img id="hamburger" class="header__hamburger-icon" src="./app/assets/shared/mobile/menu.svg" alt="hamburger icon" /> 
+    </header>
+
+    <div id="menu-bg-mobile" class="menu-bg-mobile"></div>
+
+    <section class="about">
+      <div class="about__card about__card--home about__card--dark">
+        <div class="about__card-img"></div>
+        <div class="about__card-text">
+          <h1>Create and share your photo Stories</h1>
+          <p>
+            Photosnap is a platform for photographers and visual storytellers.
+            We make it easy to share photos, tell stories and connect with others.
+          </p>
+          <a class="about__cta btn btn--arrow btn--arrow-ondark" href="#">GET AN INVITE</a>
+        </div>
+      </div>
+
+      <div class="about__card about__card--home">
+        <div class="about__card-img"></div>
+        <div class="about__card-text">
+          <h1>Beautiful stories every time</h1>
+          <p>
+            We provide design templates to ensure your stories look terrific. Easily add 
+            photos, text, embed maps and media from other networks. Then share your story 
+            with everyone.
+          </p>
+          <a class="about__cta btn btn--arrow btn--arrow-onlight" href="#">VIEW THE STORIES</a>
+        </div>
+      </div>
+
+      <div class="about__card about__card--home">
+        <div class="about__card-img"></div>
+        <div class="about__card-text">
+          <h1>Designed for everyone</h1>
+          <p>
+            Photosnap can help you create stories that resonate with your audience.  Our 
+            tool is designed for photographers of all levels, brands, businesses you name it.
+          </p>
+          <a class="about__cta btn btn--arrow btn--arrow-onlight" href="#">VIEW THE STORIES</a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <div id="stories-error-modal" class="stories__error-modal">
+      <div class="stories__error-modal-text">
+        <p>
+          This is a showcase website, there are no real stories
+          available. I built this website in order to practice my
+          web development and web design skills.
+          Have a nice day !
+        </p>
+    
+        <button id="stories-error-modal-btn" class="btn btn--onlight">Got it</button>
+      </div>
+    </div>
+
+    <section class="stories">
+      <div id="mountains-story" class="story">
+        <div class="story__text">
+          <h3>The Mountains</h3>
+          <h4>by John Appleseed</h4>
+          <a class="story__cta" href="#mountains-story">Read Story</a>
+        </div>
+        <div class="story__overlay"></div>
+      </div>
+      <div id="cityscapes-story" class="story">
+        <div class="story__text">
+          <h3>Sunset Cityscapes</h3>
+          <h4>by Benjamin Cruz</h4>
+          <a class="story__cta" href="#cityscapes-story">Read Story</a>
+        </div>
+        <div class="story__overlay"></div>
+      </div>
+      <div id="eighteen-days-voyage-story" class="story">
+        <div class="story__text">
+          <h3>18 Days Voyage</h3>
+          <h4>by Alexei Borodin</h4>
+          <a class="story__cta" href="#eighteen-days-voyage-story">Read Story</a>
+        </div>
+        <div class="story__overlay"></div>
+      </div>
+      <div id="architecturals-story" class="story">
+        <div class="story__text">
+          <h3>Architecturals</h3>
+          <h4>by Samantha Brooke</h4>
+          <a class="story__cta" href="#architecturals-story">Read Story</a>
+        </div>
+        <div class="story__overlay"></div>
+      </div>
+    </section>
+
+    <section class="home__features features">
+      <div class="feature">
+        <div class="feature__img">
+          <img src="./app/assets/features/desktop/responsive.svg" alt="responsive icon"/>
+        </div>
+        <div class="feature__text">
+          <h3>100% Responsive</h3>
+          <p>
+            No matter which the device you’re on, our site is fully responsive and stories 
+            look beautiful on any screen.
+          </p>
+        </div> 
+      </div>
+
+      <div class="feature">
+        <div class="feature__img">
+          <img src="./app/assets/features/desktop/no-limit.svg" alt="no photo limits icon"/>
+        </div>
+        <div class="feature__text">
+          <h3>No Photo Upload Limit</h3>
+          <p>
+            Our tool has no limits on uploads or bandwidth. Freely upload in bulk and 
+            share all of your stories in one go.
+          </p>
+        </div> 
+      </div>
+
+      <div class="feature">
+        <div class="feature__img">
+          <img src="./app/assets/features/desktop/embed.svg" alt="embed icon"/>
+        </div>
+        <div class="feature__text">
+          <h3>Available to Embed</h3>
+          <p>
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, 
+            Google Maps, and more.
+          </p>
+        </div> 
+      </div>
+    </section>
+
+
+    <footer id="footer" class="footer wrapper wrapper--footer">
+      <a class="footer__logo-container" href="index.html">
+        <img class="footer__logo" src="./app/assets/shared/desktop/logo-white.svg" alt="photosnap logo" />
+      </a>
+      <ul class="footer__social-medias">
+        <li id="facebook" class="footer__social-medias-item">
+          <a href="https://facebook.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+        </li>
+  
+        <li id="youtube" class="footer__social-medias-item">
+          <a href="https://youtube.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+        </li>
+  
+        <li id="twitter" class="footer__social-medias-item">
+          <a href="https://twitter.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+        </li>
+  
+        <li id="pinterest" class="footer__social-medias-item">
+          <a href="https://pinterest.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+        </li>
+  
+        <li id="instagram" class="footer__social-medias-item">
+          <a href="https://instagram.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+        </li>
+      </ul>
+
+
+      <ul class="footer__links">
+        <li class="footer__links-item">
+          <a href="index.html">HOME</a>
+        </li>
+        <li class="footer__links-item">
+          <a href="stories.html">STORIES</a>
+        </li>
+        <li class="footer__links-item">
+          <a href="features.html">FEATURES</a>
+        </li>
+        <li class="footer__links-item">
+          <a href="pricing.html">PRICING</a>
+        </li>
+      </ul>
+
+      <a href="#footer" class="footer__cta btn btn--arrow btn--arrow-ondark">GET AN INVITE</a>
+      <p class="footer__copyrights">Copyright 2019. All Rights Reserved</p>
+    </footer>
+
+    <script src="./app/js/main.js"></script>
+    <script src="./app/js/menu.js"></script>
+    <script src="./app/js/stories.js"></script>
+</body>
+</html>

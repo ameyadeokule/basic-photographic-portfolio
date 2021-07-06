@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./app/css/styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./app/assets/favicon-32x32.png">
+  <meta
+  name="description"           
+  content="showcase website built from scratch in order to get better at web development and web design, using HTML, Sass and Javascript" />
+  <title>Photosnap | Stories</title>
+</head>
+<body>
+
+  <header class="header wrapper wrapper--header">
+    <a href="index.html">
+      <img class="header__logo" src="./app/assets/shared/desktop/logo.svg" alt="photosnap logo" />
+    </a>
+    <ul id="menu" class="header__menu">
+      <li class="header__menu-link"><a href="./stories.html">STORIES</a></li>
+      <li class="header__menu-link"><a href="./features.html">FEATURES</a></li>
+      <li class="header__menu-link"><a href="./pricing.html">PRICING</a></li>
+    </ul>
+    <a class="header__cta btn btn--onlight" href="#">GET AN INVITE</a>
+    <img id="hamburger" class="header__hamburger-icon" src="./app/assets/shared/mobile/menu.svg" alt="hamburger icon" /> 
+  </header>
+
+  <div id="menu-bg-mobile" class="menu-bg-mobile"></div>
+
+  <section id="hero" class="hero">
+    <div class="hero__img"></div>
+    <div class="hero__text">
+      <h4>last month's featured story</h4>
+      <h1 class="hero__title">hazzy full moon of appalachia</h1>
+      <h4 class="hero__date-and-author">March 2nd 2020 by John Appleseed</h4>
+      <p class="hero__details">
+        The dissected plateau area, while not actually made up of geological mountains, 
+        is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
+        and while the ridges are not high, the terrain is extremely rugged.
+      </p>
+      <a class="header__cta btn btn--arrow btn--arrow-ondark" href="#">READ THE STORY</a>
+    </div>
+  </section>
+
+  <div id="stories-error-modal" class="stories__error-modal">
+    <div class="stories__error-modal-text">
+      <p>
+        This is a showcase website, there are no real stories
+        available. I built this website in order to practice my
+        web development and web design skills.
+        Have a nice day !
+      </p>
+  
+      <button id="stories-error-modal-btn" class="btn btn--onlight">Got it</button>
+    </div>
+  </div>
+
+  <section class="stories">
+    <div id="mountains-story" class="story">
+      <div class="story__text">
+        <h4 class="story__date">April 16th 2020</h4>
+        <h3 class="story__title">The Mountains</h3>
+        <h4 class="story__author">by John Appleseed</h4>
+        <a class="story__cta" href="#mountains-story">Read Story</a>
+      </div>
+      <div class="story__overlay"></div>
+    </div>
+    <div id="cityscapes-story" class="story">
+      <div class="story__text">
+        <h4 class="story__date">April 14th 2020</h4>
+        <h3 class="story__title">Sunset Cityscapes</h3>
+        <h4 class="story__author">by Benjamin Cruz</h4>
+        <a class="story__cta" href="#cityscapes-story">Read Story</a>
+      </div>
+      <div class="story__overlay"></div>
+    </div>
+    <div id="eighteen-days-voyage-story" class="story">
+      <div class="story__text">
+        <h4 class="story__date">April 11th 2020</h4>
+        <h3 class="story__title">18 Days Voyage</h3>
+        <h4 class="story__author">by Alexei Borodin</h4>
+        <a class="story__cta" href="#eighteen-days-voyage-story">Read Story</a>
+      </div>
+      <div class="story__overlay"></div>
+    </div>
+    <div id="architecturals-story" class="story">
+      <div class="story__text">
+        <h4 class="story__date">April 9th 2020</h4>
+        <h3 class="story__title">Architecturals</h3>
+        <h4 class="story__author">by Samantha Brooke</h4>
+        <a class="story__cta" href="#architecturals-story">Read Story</a>
+      </div>
+      <div class="story__overlay"></div>
+    </div>
+
+    <!-- desktop row -->
+    <div id="world-tour-story" class="story">
+      <div class="story__text">
+        <h4 class="story__date">April 7th 2020</h4>
+        <h3 class="story__title">World Tour 2019</h3>
+        <h4 class="story__author">by Timothy Wagner</h4>
+        <a class="story__cta" href="#world-tour-story">Read Story</a>
+      </div>
+      <div class="story__overlay"></div>
+    </div>
+
+  <div id="unforeseen-corners-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">April 3rd 2020</h4>
+      <h3 class="story__title">Unforeseen Corners</h3>
+      <h4 class="story__author">by William Malcolm</h4>
+      <a class="story__cta" href="#unforeseen-corners-story">Read Story</a>
+    </div>    
+    <div class="story__overlay"></div>
+  </div>
+
+  <div id="king-on-africa-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">March 29th 2020</h4>
+      <h3 class="story__title">King on Africa: Part II</h3>
+      <h4 class="story__author">by Tim Hillenburg</h4>
+      <a class="story__cta" href="#king-on-africa-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+
+  <div id="trip-to-nowhere-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">March 21st 2020</h4>
+      <h3 class="story__title">The Trip to Nowhere</h3>
+      <h4 class="story__author">by Felicia Rourke</h4>
+      <a class="story__cta" href="#trip-to-nowhere-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+
+  <!-- desktop row -->
+
+  <div id="rage-of-the-sea-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">March 19th 2020</h4>
+      <h3 class="story__title">Rage of The Sea</h3>
+      <h4 class="story__author">by Mohammed Abdul</h4>
+      <a class="story__cta" href="#rage-of-the-sea-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+  
+  <div id="running-free-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">March 16th 2020</h4>
+      <h3 class="story__title">Running Free</h3>
+      <h4 class="story__author">by Michelle</h4>
+      <a class="story__cta" href="#running-free-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+  
+  <div id="behind-the-waves-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">March 11th 2020</h4>
+      <h3 class="story__title">Behind the Waves</h3>
+      <h4 class="story__author"by Lamarr Wilson></h4>
+      <a class="story__cta" href="#behind-the-waves-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+
+  <div id="calm-waters-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">March 9th 2020</h4>
+      <h3 class="story__title">Calm Waters</h3>
+      <h4 class="story__author">by Samantha Brooke</h4>
+      <a class="story__cta" href="#calm-waters-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+
+  <!--desktop row-->
+
+  <div id="milky-way-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">March 5th 2020</h4>
+      <h3 class="story__title">The Milky Way</h3>
+      <h4 class="story__author">by Benjamin Cruz</h4>
+      <a class="story__cta" href="#milky-way-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+  
+  <div id="dark-forest-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">March 4th 2020</h4>
+      <h3 class="story__title">Night at The Dark Forest</h3>
+      <h4 class="story__author">by  Mohammed Abdul</h4>
+      <a class="story__cta" href="#dark-forest-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+  
+  <div id="somwarpet-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">March 1st 2020</h4>
+      <h3 class="story__title">Somwarpet’s Beauty</h3>
+      <h4 class="story__author">by Michelle</h4>
+      <a class="story__cta" href="#somwarpet-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+
+  <div id="land-of-dreams-story" class="story">
+    <div class="story__text">
+      <h4 class="story__date">February 25th 2020</h4>
+      <h3 class="story__title">Land of Dreams</h3>
+      <h4 class="story__author">by William Malcolm</h4>
+      <a class="story__cta" href="#land-of-dreams-story">Read Story</a>
+    </div>
+    <div class="story__overlay"></div>
+  </div>
+  </section>
+
+
+
+  <footer id="footer" class="footer wrapper wrapper--footer">
+    <a class="footer__logo-container" href="index.html">
+      <img class="footer__logo" src="./app/assets/shared/desktop/logo-white.svg" alt="photosnap logo" />
+    </a>
+    <ul class="footer__social-medias">
+      <li id="facebook" class="footer__social-medias-item">
+        <a href="https://facebook.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+      </li>
+
+      <li id="youtube" class="footer__social-medias-item">
+        <a href="https://youtube.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+      </li>
+
+      <li id="twitter" class="footer__social-medias-item">
+        <a href="https://twitter.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+      </li>
+
+      <li id="pinterest" class="footer__social-medias-item">
+        <a href="https://pinterest.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+      </li>
+
+      <li id="instagram" class="footer__social-medias-item">
+        <a href="https://instagram.com" rel="noreferrer noopener nofollow" target="_blank"></a>
+      </li>
+    </ul>
+
+
+      <ul class="footer__links">
+        <li class="footer__links-item">
+          <a href="index.html">HOME</a>
+        </li>
+        <li class="footer__links-item">
+          <a href="stories.html">STORIES</a>
+        </li>
+        <li class="footer__links-item">
+          <a href="features.html">FEATURES</a>
+        </li>
+        <li class="footer__links-item">
+          <a href="pricing.html">PRICING</a>
+        </li>
+      </ul>
+
+      <a href="#footer" class="footer__cta btn btn--arrow btn--arrow-ondark">GET AN INVITE</a>
+      <p class="footer__copyrights">Copyright 2019. All Rights Reserved</p>
+    </footer>
+
+    <script src="./app/js/main.js"></script>
+    <script src="./app/js/menu.js"></script>
+    <script src="./app/js/stories.js"></script>
+
+</body>
+</html>
