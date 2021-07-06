@@ -1,0 +1,12 @@
+@mixin set-background-image($name){
+    $path: "../assets/stories";
+
+    background-image: url($path + "/mobile/" + $name + ".jpg");
+
+    @media screen and (min-width: 550px){
+        background-image: url($path + "/mobile-xl/" + $name + ".jpg");
+    }
+    @media screen and (min-width: 1440px){
+        background-image: url($path + "/desktop/" + $name + ".jpg");
+    }
+}

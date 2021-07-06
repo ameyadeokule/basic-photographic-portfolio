@@ -1,0 +1,105 @@
+.story{
+    width: 100%;
+    height: 100vw;
+    color: $white;
+    padding: 14.75rem 1.5rem 2.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.2s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+
+    &__overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $black;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    &__text{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    &:hover{
+        bottom: 1.5rem;
+        cursor: pointer;
+        transition: bottom 0.2s ease-in-out;
+
+        .story__overlay{
+            opacity: 0.4;
+        }
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 0.375rem;
+            background: $main-gradient;
+            position: absolute;
+            bottom: -0.375rem;
+            left: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        //height: 31.25rem;
+        height: 34.7222vw;
+        padding: 22.5rem 2.5rem 2.5rem 2.5rem;
+    }
+
+    &__text{
+        a{
+            color: white;
+            text-transform: uppercase;
+            margin-top: 1.25rem;
+            position: relative;
+            display: block;
+            
+
+            &::after{
+                content : "";
+                background-image: url("../assets/shared/desktop/arrow-white.svg");
+                background-repeat: no-repeat;
+                width: 2.6875rem;
+                height: 0.875rem;
+                position: absolute;
+                top: 0.3rem;
+                right: 0;
+            }
+        }
+    }
+
+    &__author{
+        padding-bottom: 1rem;
+        border-bottom: 1px solid white;
+    }
+}
+
+
+
+/*___stories background images____*/
+
+#mountains-story{@include set-background-image("mountains");}
+#cityscapes-story{@include set-background-image("cityscapes");}
+#eighteen-days-voyage-story{@include set-background-image("18-days-voyage");}
+#architecturals-story{@include set-background-image("architecturals");}
+#world-tour-story{@include set-background-image("world-tour");}
+#unforeseen-corners-story{@include set-background-image("unforeseen-corners");}
+#king-on-africa-story{@include set-background-image("king-on-africa");}
+#trip-to-nowhere-story{@include set-background-image("trip-to-nowhere");}
+#rage-of-the-sea-story{@include set-background-image("rage-of-the-sea");}
+#running-free-story{@include set-background-image("running-free");}
+#behind-the-waves-story{@include set-background-image("behind-the-waves");}
+#calm-waters-story{@include set-background-image("calm-waters");}
+#milky-way-story{@include set-background-image("milky-way");}
+#dark-forest-story{@include set-background-image("dark-forest");}
+#somwarpet-story{@include set-background-image("somwarpet");}
+#land-of-dreams-story{@include set-background-image("land-of-dreams");}

@@ -1,0 +1,24 @@
+.switch{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: $light-gray;
+    position: relative;
+    cursor: pointer;
+
+    &::after{
+        content: "";
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 2rem;
+        position: absolute;
+        top: 0.25rem;
+        left: 0.125rem;
+        background-color: $black;
+        transition: 0.3s ease-in-out;
+    }
+
+    &--active::after{
+        left: 2.375rem;
+    }
+}

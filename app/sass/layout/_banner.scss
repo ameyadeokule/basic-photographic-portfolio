@@ -1,0 +1,44 @@
+.banner{
+    background-repeat: no-repeat;
+    width: 100%;
+
+    &--beta{
+        background-image: url("../assets/shared/mobile/bg-beta.jpg");
+        background-size: cover;
+        height: 18rem;
+        color: $white;
+        padding: 4rem 2rem;
+
+        h1{
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            width: 19.375rem;
+
+        }
+
+        @media screen and (max-width: 374px){
+            h1{
+                width: auto;
+                font-size: 1.25rem;
+            }
+        }
+
+        @media screen and (min-width: 768px){
+            background-image: url("../assets/shared/tablet/bg-beta.jpg");
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 17.5rem;
+            padding: 4.25rem 2.5rem;
+
+            h1{
+                width: 25rem;
+            }
+        }
+        @media screen and (min-width: 1440px){
+            background-image: url("../assets/shared/desktop/bg-beta.jpg");
+            padding: 4.25rem 10.25rem;
+        }
+    }
+}

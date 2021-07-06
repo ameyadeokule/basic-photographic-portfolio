@@ -1,0 +1,68 @@
+.btn{
+    font-weight: $fw-lg;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    padding: 0.75rem 1.5rem;
+    letter-spacing: 0.125rem;
+    cursor: pointer;
+
+    &--arrow{
+        width: auto;
+        padding: 0;
+        padding-right: 3.375rem;
+        position: relative;
+        text-align: left;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 2.75rem;
+            height: 1rem;
+            background-repeat: no-repeat;
+        
+        }
+    }
+
+    &--onlight{
+        color: $white;
+        background-color: $black;
+        
+        &:hover {
+            color: $black;
+            background-color: $light-gray;
+        }
+    }
+
+    &--ondark{
+        color: $black;
+        background-color: $white;
+
+        &:hover{
+            color: $black;
+            background-color: $light-gray;
+        }
+    }
+
+    &--arrow-ondark{
+        color: $white;
+
+        &::after{
+            background-image: url("../assets/shared/desktop/arrow-white.svg");
+        }
+    }
+
+    &--arrow-onlight{
+        color: $black;
+        
+        &::after{
+            background-image: url("../assets/shared/desktop/arrow.svg");        
+        }
+
+    }
+}

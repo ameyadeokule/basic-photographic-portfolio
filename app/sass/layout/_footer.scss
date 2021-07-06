@@ -1,0 +1,189 @@
+.footer{
+    background-color: $black;
+    color: $white;
+    display: grid;
+    row-gap: 1.4rem;
+    grid-template-areas: 
+    "logo"
+    "social-medias"
+    "links"
+    "cta"
+    "copyrights";
+
+    @media screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "logo cta"
+        "links ."
+        ". ."
+        "social-medias copyrights";
+    }
+
+    @media screen and (min-width: 1440px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "logo links . cta"
+        "social-medias links . copyrights";
+        row-gap: 0;
+    }
+
+
+    &__logo, &__social-medias, &__links, &__cta, &__copyrights{
+        justify-self: center;
+
+        @media screen and (min-width: 768px){
+            align-self: center;
+        }
+    }
+
+
+    &__logo{
+        grid-area: logo;
+        img{
+            width: 10.625rem;
+            height: 1rem;
+        }
+
+        @media screen and (min-width: 768px){
+            justify-self: start;
+        }
+
+        @media screen and (min-width: 1440px){
+            align-self: start;
+        }
+    }
+
+    &__logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 768px){
+            justify-content: flex-start;
+        }
+    }
+
+    &__social-medias{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 9.5625rem;
+        grid-area: social-medias;
+
+        @media screen and (min-width: 768px){
+            justify-self: start;
+        }
+
+        @media screen and (min-width: 1440px){
+            align-self: end;
+        }
+
+        li{
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        a{
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-repeat: no-repeat;
+            background-size: 1.25rem;
+            background-position: center;
+        }
+
+        #facebook a{
+            background-image: url("../assets/shared/desktop/facebook-white.svg");
+            &:hover{
+                background-image: url("../assets/shared/desktop/facebook.svg");
+            }
+        }
+
+        #youtube a{
+            background-image: url("../assets/shared/desktop/youtube-white.svg");
+            &:hover{
+                background-image: url("../assets/shared/desktop/youtube.svg");
+            }
+        }
+
+        #twitter a{
+            background-image: url("../assets/shared/desktop/twitter-white.svg");
+            &:hover{
+                background-image: url("../assets/shared/desktop/twitter.svg");
+            }
+        }
+
+        #instagram a{
+            background-image: url("../assets/shared/desktop/instagram-white.svg");
+            &:hover{
+                background-image: url("../assets/shared/desktop/instagram.svg");
+            }
+        }
+        
+        #pinterest a{
+            background-image: url("../assets/shared/desktop/pinterest-white.svg");
+            &:hover{
+                background-image: url("../assets/shared/desktop/pinterest.svg");
+            }
+        }
+    }
+
+    &__links{
+        grid-area: links;
+        text-align: center;
+
+        @media screen and (min-width: 768px) and (max-width: 1439px){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-self: start;
+            align-items: center;
+            width: 19.6875rem;
+        }
+
+        a{
+            color: $white;
+            
+            &:hover{
+                color: $gray;
+            }
+        }
+    }
+
+    &__links-item{
+        @media screen and (min-width: 1440px){
+            margin-bottom: 1.125rem;
+            &:nth-child(4){
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__cta{
+        grid-area: cta;
+
+        @media screen and (min-width: 768px){
+            justify-self: end;
+        }
+
+        @media screen and (min-width: 1440px){
+            align-self: start;
+        }
+    }
+
+    &__copyrights{
+        color: $gray;
+        grid-area: copyrights;
+
+        @media screen and (min-width: 768px){
+            justify-self: end;
+        }
+
+        @media screen and (min-width: 1440px){
+            align-self: end;
+        }
+    }
+}
